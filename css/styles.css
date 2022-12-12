@@ -164,28 +164,22 @@ p{
     width: 40%;
     height: 40%;
     position: relative;
-    left: 100%;
-    bottom: 200px;
+    left: 80%;
+    bottom: 180px;
 }
 
 .tamañoInGame{
     width: 4%;
     height: 21%;
     position: relative;
-    bottom: 70px;
-    left: 30px;
+    bottom: 60px;
+    left: 1320px;
 }
 
 .posicionIcon{
     position: relative;
     top: 70px;
-    left: 15px; 
-}
-.justificarIzquierda{
-    justify-content: left;
-    position: relative;
-    left: 150px;
-
+    left: 1300px; 
 }
 
 .longitudMaximaMenor{
@@ -376,7 +370,15 @@ header{
     }
 
     .tamañoInGame{
-        width: 14%;
+        width: 10%;
+        height: 16%;
+        left: 370px;
+    }
+
+    .posicionIcon{
+        left: 350px;
+        height: 22%;
+        width: 16%;
     }
 
 }
