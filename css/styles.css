@@ -325,6 +325,17 @@ header{
     grid-area: header;
 }
 
+.longitudMaximaMovile{
+    max-width: 100%;
+}
+
+.navegacion{
+    background-color: #F26938;
+}
+
+.alinearCentro{
+    align-content: center;
+}
 
 
 /* grilla general*/
@@ -338,7 +349,7 @@ header{
     "footer" ;
 }
 
-@media(max-width:500px){
+@media(max-width:576px){
 
     .grillaGeneral{
         display: grid;
@@ -346,6 +357,10 @@ header{
         "header"
         "contenido"
         "footer" ;
+    }
+
+    .longitudMaximaMovile{
+        max-width: 500px;
     }
 
     header{
@@ -358,7 +373,7 @@ header{
     }
 
     p{
-        font-size: 15px;
+        font-size: 12px;
     }
 
     a{
@@ -366,21 +381,26 @@ header{
     }
 
     .tamañoPrueba {
-        width: 40%;
-        height: 30%;
-        left: 60%;
+        width: 45%;
+        height: 35%;
+        left: 100%;
+        top: -130px;
     }
 
     .tamañoInGame{
         width: 10%;
-        height: 16%;
+        height: 21%;
         left: 370px;
     }
 
     .posicionIcon{
         left: 350px;
-        height: 22%;
+        height: 30%;
         width: 16%;
+    }
+
+    .textoMediano{
+        font-size: 15px;
     }
 
 }
