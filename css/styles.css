@@ -20,6 +20,8 @@ body{
 
 ul{
     display: grid;
+    list-style: none;
+    padding-left: 0px;
 }
 
 main{
@@ -164,7 +166,7 @@ p{
     width: 40%;
     height: 40%;
     position: relative;
-    left: 80%;
+    left: 100%;
     bottom: 180px;
 }
 
@@ -187,7 +189,7 @@ p{
 }
 .moverArriba{
     position: relative;
-    bottom: 15px;
+    bottom: -25px;
 }
 
 .justificarIzquierdaMayor{
