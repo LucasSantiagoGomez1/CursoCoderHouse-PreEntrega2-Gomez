@@ -15,14 +15,6 @@
   color: #191340;
 }
 
-.parrafo {
-  font-size: 20;
-}
-
-.textoMediano {
-  font-size: x-large;
-}
-
 .alinearDerecha {
   text-align: right;
 }
@@ -121,6 +113,18 @@ main .tamañoManuel {
 main .tamañoManuel:hover {
   transform: scale(1.1, 1.1);
 }
+main .posicionIcon {
+  position: relative;
+  top: 70px;
+  left: 1300px;
+}
+@media (max-width: 576px) {
+  main .posicionIcon {
+    left: 350px;
+    height: 30%;
+    width: 16%;
+  }
+}
 main .tamañoInGame {
   width: 4%;
   height: 24%;
@@ -128,10 +132,12 @@ main .tamañoInGame {
   bottom: 60px;
   left: 1320px;
 }
-main .posicionIcon {
-  position: relative;
-  top: 70px;
-  left: 1300px;
+@media (max-width: 576px) {
+  main .tamañoInGame {
+    width: 10%;
+    height: 21%;
+    left: 370px;
+  }
 }
 
 header {
@@ -171,6 +177,24 @@ footer .tamañoFlecha {
   height: 70px;
   width: 70px;
 }
+footer .textoMediano {
+  font-size: x-large;
+}
+@media (max-width: 576px) {
+  footer .textoMediano {
+    font-size: 15px;
+  }
+}
+footer .tamañoTextarea {
+  width: 654px;
+  height: 190px;
+}
+@media (max-width: 576px) {
+  footer .tamañoTextarea {
+    width: 407px;
+    height: 120px;
+  }
+}
 
 a {
   text-decoration: none;
@@ -188,6 +212,11 @@ p {
   font-size: 20px;
   list-style-type: none;
   color: #191340;
+}
+@media (max-width: 576px) {
+  p {
+    font-size: 15px;
+  }
 }
 
 .tamañoPrueba {
@@ -326,11 +355,6 @@ p {
   left: 600px;
 }
 
-.tamañoTextarea {
-  width: 654px;
-  height: 190px;
-}
-
 .flexContainer {
   display: flex;
   flex-direction: row;
@@ -388,30 +412,10 @@ header {
   .longitudMaximaMovile {
     max-width: 500px;
   }
-  .tamañoTextarea {
-    width: 407px;
-    height: 120px;
-  }
-  p {
-    font-size: 12px;
-  }
   .tamañoPrueba {
     width: 45%;
     height: 35%;
     left: 100%;
     top: -130px;
-  }
-  .tamañoInGame {
-    width: 10%;
-    height: 21%;
-    left: 370px;
-  }
-  .posicionIcon {
-    left: 350px;
-    height: 30%;
-    width: 16%;
-  }
-  .textoMediano {
-    font-size: 15px;
   }
 }/*# sourceMappingURL=estilos.css.map */

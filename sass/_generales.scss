@@ -83,6 +83,30 @@ main{
     .tamañoManuel:hover{
         transform: scale(1.1, 1.1);
     }
+
+    .posicionIcon{
+        position: relative;
+        top: 70px;
+        left: 1300px; 
+        @media(max-width:576px){
+            left: 350px;
+            height: 30%;
+            width: 16%;
+        }
+    }
+
+    .tamañoInGame{
+        width: 4%;
+        height: 24%;
+        position: relative;
+        bottom: 60px;
+        left: 1320px;
+        @media(max-width:576px){
+            width: 10%;
+            height: 21%;
+            left: 370px;
+        }
+    }
 }
 
 header{
@@ -101,6 +125,7 @@ header{
     .tamañoLogo{
         height: 200px;
         width: 600px;
+
         @media(max-width:576px){
             height: 150px;
             width: 440px;
@@ -151,4 +176,7 @@ p{
     font-size: 20px;
     list-style-type: none ;
     color: #191340;
+    @media(max-width:576px){
+        font-size: 15px;
+    }
 }
