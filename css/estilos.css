@@ -1,25 +1,48 @@
 @charset "UTF-8";
-* {
-  padding: 0;
-  margin: 0;
-}
-
-img {
-  padding: 10px;
+.letras {
+  padding: 15px;
+  padding-top: 10px;
+  list-style-type: none;
+  font-size: 35px;
+  text-align: center;
 }
 
 .paddingDerecha {
   padding-right: 20px;
 }
 
+.letrasOscuras {
+  color: #191340;
+}
+
 .parrafo {
   font-size: 20;
+}
+
+.textoMediano {
+  font-size: x-large;
+}
+
+.alinearDerecha {
+  text-align: right;
+}
+
+.transformarTexto {
+  transition: 1.5s;
+}
+
+.transformarTexto:hover {
+  transform: scale(1.1, 1.1);
 }
 
 body {
   background-color: slategrey;
   display: flex;
   flex-direction: column;
+}
+
+img {
+  padding: 10px;
 }
 
 ul {
@@ -31,14 +54,84 @@ ul {
 main {
   background-color: #F26938;
   display: grid;
+  line-height: 1.7;
+  font-family: none;
 }
-
-.letrasOscuras {
-  color: #191340;
+main .tamañoGuisante {
+  position: relative;
+  width: 100px;
+  height: 80px;
+  right: 20px;
+  transition: all 1.5s;
 }
-
-.textoMediano {
-  font-size: x-large;
+@media (max-width: 576px) {
+  main .tamañoGuisante {
+    width: 80px;
+    height: 60px;
+  }
+}
+main .tamañoGuisante:hover {
+  transform: scale(1.1, 1.1);
+}
+main .imagenMazmorra {
+  position: relative;
+  height: 150px;
+  width: 180px;
+  right: 20px;
+  transition: all 1.5s;
+}
+@media (max-width: 576px) {
+  main .imagenMazmorra {
+    height: 130px;
+    width: 160px;
+  }
+}
+main .imagenMazmorra:hover {
+  transform: scale(1.1, 1.1);
+}
+main .tamañoSecreto {
+  position: relative;
+  width: 130px;
+  height: 110px;
+  right: 20px;
+  transition: all 1.5s;
+}
+@media (max-width: 576px) {
+  main .tamañoSecreto {
+    width: 110px;
+    height: 90px;
+  }
+}
+main .tamañoSecreto:hover {
+  transform: scale(1.1, 1.1);
+}
+main .tamañoManuel {
+  position: relative;
+  width: 90px;
+  height: 110px;
+  right: 20px;
+  transition: all 1.5s;
+}
+@media (max-width: 576px) {
+  main .tamañoManuel {
+    width: 60px;
+    height: 80px;
+  }
+}
+main .tamañoManuel:hover {
+  transform: scale(1.1, 1.1);
+}
+main .tamañoInGame {
+  width: 4%;
+  height: 24%;
+  position: relative;
+  bottom: 60px;
+  left: 1320px;
+}
+main .posicionIcon {
+  position: relative;
+  top: 70px;
+  left: 1300px;
 }
 
 header {
@@ -51,106 +144,42 @@ header {
   color: #F26938;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+@media (max-width: 576px) {
+  header {
+    font-size: 300%;
+  }
+}
+header .tamañoLogo {
+  height: 200px;
+  width: 600px;
+}
+@media (max-width: 576px) {
+  header .tamañoLogo {
+    height: 150px;
+    width: 440px;
+  }
+}
 
 footer {
   text-align: right;
   background-color: slategray;
   display: grid;
 }
-
-main {
-  line-height: 1.7;
-}
-
-.alinearDerecha {
-  text-align: right;
-}
-
-.letras {
-  padding: 15px;
-  padding-top: 10px;
-  list-style-type: none;
-  font-size: 35px;
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
-  color: #191340;
-}
-
-.tamañoFlecha {
+footer .tamañoFlecha {
   position: relative;
   top: 22px;
   height: 70px;
   width: 70px;
 }
 
-.tamañoLogo {
-  height: 200px;
-  width: 600px;
+a {
+  text-decoration: none;
+  color: #191340;
 }
-
-.paddingTop {
-  padding-top: 70px;
-}
-
-.paddingBottom {
-  padding-bottom: 70px;
-}
-
-.tamañoImagen {
-  position: relative;
-  width: 100px;
-  height: 80px;
-  right: 20px;
-  transition: all 1.5s;
-}
-
-.tamañoImagen:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.imagenMazmorra {
-  position: relative;
-  right: 20px;
-  transition: all 1.5s;
-}
-
-.imagenMazmorra:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.tamañoSecreto {
-  position: relative;
-  width: 130px;
-  height: 110px;
-  right: 20px;
-  transition: all 1.5s;
-}
-
-.tamañoSecreto:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.tamañoManuel {
-  position: relative;
-  width: 90px;
-  height: 110px;
-  right: 20px;
-  transition: all 1.5s;
-}
-
-.tamañoManuel:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.transformarTexto {
-  transition: 1.5s;
-}
-
-.transformarTexto:hover {
-  transform: scale(1.1, 1.1);
+@media (max-width: 576px) {
+  a {
+    font-size: 65%;
+  }
 }
 
 p {
@@ -161,30 +190,85 @@ p {
   color: #191340;
 }
 
-.longitudMaxima {
-  width: 60%;
-}
-
 .tamañoPrueba {
   width: 40%;
   height: 40%;
   position: relative;
-  left: 100%;
+  left: 80%;
   bottom: 180px;
 }
 
-.tamañoInGame {
-  width: 4%;
-  height: 24%;
+.moverTienda {
   position: relative;
-  bottom: 60px;
-  left: 1320px;
+  left: 1000px;
+  bottom: 185px;
 }
 
-.posicionIcon {
+.moverJefe {
   position: relative;
-  top: 70px;
+  bottom: 400px;
+}
+
+.tamañoLlave {
+  height: 130px;
+  width: 70px;
+  position: relative;
+  top: 50px;
+}
+
+.tamañoFogata {
+  height: 30%;
+  width: 30%;
+  position: relative;
+  top: 150px;
+  left: 30px;
+}
+
+.moverBala {
+  position: relative;
+  left: 30px;
+}
+
+.tamañoRoll {
+  height: 30%;
+  width: 30%;
+  position: relative;
+}
+
+.moverDado {
+  position: relative;
+  left: 1200px;
+  bottom: 300px;
+}
+
+.moverCartucho {
+  position: relative;
+  left: 1250px;
+  bottom: 250px;
+}
+
+.moverSoldado {
+  position: relative;
   left: 1300px;
+  bottom: 300px;
+}
+
+.moverJefe {
+  position: relative;
+  left: 1000px;
+  top: 10px;
+}
+
+.paddingTop {
+  padding-top: 70px;
+}
+
+.paddingBottom {
+  padding-bottom: 70px;
+}
+
+.longitudMaxima {
+  width: 60%;
 }
 
 .longitudMaximaMenor {
@@ -219,17 +303,6 @@ p {
   top: 165px;
 }
 
-.moverTienda {
-  position: relative;
-  left: 1000px;
-  bottom: 185px;
-}
-
-.moverJefe {
-  position: relative;
-  bottom: 400px;
-}
-
 .alturaMaxima {
   max-height: 400px;
 }
@@ -241,35 +314,9 @@ p {
   max-width: 50%;
 }
 
-.tamañoLlave {
-  height: 130px;
-  width: 70px;
-  position: relative;
-  top: 50px;
-}
-
-.tamañoFogata {
-  height: 30%;
-  width: 30%;
-  position: relative;
-  top: 150px;
-  left: 30px;
-}
-
 .moverMasArriba {
   position: relative;
   bottom: 30px;
-}
-
-.moverBala {
-  position: relative;
-  left: 30px;
-}
-
-.tamañoRoll {
-  height: 30%;
-  width: 30%;
-  position: relative;
 }
 
 .moverTextoRoll {
@@ -279,28 +326,9 @@ p {
   left: 600px;
 }
 
-.moverDado {
-  position: relative;
-  left: 1200px;
-  bottom: 300px;
-}
-
-.moverCartucho {
-  position: relative;
-  left: 1250px;
-  bottom: 250px;
-}
-
-.moverSoldado {
-  position: relative;
-  left: 1300px;
-  bottom: 300px;
-}
-
-.moverJefe {
-  position: relative;
-  left: 1000px;
-  top: 10px;
+.tamañoTextarea {
+  width: 654px;
+  height: 190px;
 }
 
 .flexContainer {
@@ -315,6 +343,15 @@ p {
   align-items: center;
 }
 
+.longitudMaximaMovile {
+  max-width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
 /* grid areas */
 main {
   grid-area: contenido;
@@ -326,10 +363,6 @@ footer {
 
 header {
   grid-area: header;
-}
-
-.longitudMaximaMovile {
-  max-width: 100%;
 }
 
 .navegacion {
@@ -355,18 +388,12 @@ header {
   .longitudMaximaMovile {
     max-width: 500px;
   }
-  header {
-    font-size: 300%;
-  }
-  .tamañoLogo {
-    height: 150px;
-    width: 440px;
+  .tamañoTextarea {
+    width: 407px;
+    height: 120px;
   }
   p {
     font-size: 12px;
-  }
-  a {
-    font-size: 65%;
   }
   .tamañoPrueba {
     width: 45%;

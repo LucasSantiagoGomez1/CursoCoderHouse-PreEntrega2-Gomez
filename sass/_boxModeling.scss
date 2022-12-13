@@ -1,0 +1,82 @@
+.paddingTop{
+    padding-top: 70px;
+}
+
+.paddingBottom{
+    padding-bottom: 70px;
+}
+
+.longitudMaxima{
+    width: 60%;
+}
+
+.longitudMaximaMenor{
+    width: 65%;
+}
+
+.moverArriba{
+    position: relative;
+    bottom: -25px;
+}
+
+.justificarIzquierdaMayor{
+    justify-content: left;
+    position: relative;
+    max-width: 92%;
+}
+
+.moverAbajoImagen{
+    position: relative;
+    top: 230px;
+}
+
+.moverArribaImagen{
+    position: relative;
+    bottom: -50px;
+}
+
+.soloJustificarIzquierda{
+    justify-content: left;
+    max-width: 50%;
+    position: relative;
+    top: 165px;
+}
+
+.alturaMaxima{
+    max-height: 400px;
+}
+
+.justificarYMover{
+    justify-content: left;
+    position: relative;
+    bottom: 370px;
+    max-width: 50%;
+}
+
+.moverMasArriba{
+    position: relative;
+    bottom: 30px;
+}
+
+.moverTextoRoll{
+    max-width: 65%;
+    position: relative;
+    bottom: 250px;
+    left: 600px;
+}
+
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.longitudMaximaMovile{
+    max-width: 100%;
+}
