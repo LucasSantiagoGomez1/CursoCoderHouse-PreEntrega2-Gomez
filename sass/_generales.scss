@@ -19,6 +19,7 @@ main{
     display: grid;
     line-height: 1.7;
     font-family: none;
+    grid-area: contenido;
 
     .tamañoGuisante{
         position: relative;
@@ -84,6 +85,21 @@ main{
         transform: scale(1.1, 1.1);
     }
 
+    .tamañoPrueba{
+
+        width: 40%;
+        height: 40%;
+        position: relative;
+        left: 80%;
+        bottom: 180px;
+        @media(max-width:576px){
+            width: 45%;
+            height: 35%;
+            left: 100%;
+            top: -130px;
+        }
+    }
+
     .posicionIcon{
         position: relative;
         top: 70px;
@@ -107,6 +123,13 @@ main{
             left: 370px;
         }
     }
+    
+    .longitudMaximaMovile{
+        max-width: 100%;
+        @media(max-width:576px){
+            max-width: 500px;
+        }
+    }
 }
 
 header{
@@ -118,6 +141,8 @@ header{
     font-size: 500%;
     color: #F26938;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-area: header;
+
     @media(max-width:576px){
         font-size: 300%;
     }
@@ -137,6 +162,7 @@ footer{
     text-align: right;
     background-color: slategray;
     display: grid;
+    grid-area: footer;
 
     .tamañoFlecha{
         position: relative;
@@ -178,5 +204,23 @@ p{
     color: #191340;
     @media(max-width:576px){
         font-size: 15px;
+    }
+
+
+}
+
+.grillaGeneral{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "contenido"
+    "footer" ;
+    @media(max-width:576px){
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "contenido"
+        "footer" ;
     }
 }

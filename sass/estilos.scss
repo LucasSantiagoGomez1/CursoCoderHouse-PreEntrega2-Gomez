@@ -12,17 +12,8 @@
 
 /* grid areas */
 
-main{
-    grid-area: contenido;
-}
 
-footer{
-    grid-area: footer;
-}
 
-header{
-    grid-area: header;
-}
 
 .navegacion{
     background-color: #F26938;
@@ -35,33 +26,10 @@ header{
 
 /* grilla general*/
 
-.grillaGeneral{
-    display: grid;
-    gap: 10px;
-    grid-template-areas: 
-    "header"
-    "contenido"
-    "footer" ;
-}
 
 @media(max-width:576px){
 
-    .grillaGeneral{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "contenido"
-        "footer" ;
-    }
-
     .longitudMaximaMovile{
-        max-width: 500px;
-    }
-
-    .tamañoPrueba {
-        width: 45%;
-        height: 35%;
-        left: 100%;
-        top: -130px;
+        
     }
 }
