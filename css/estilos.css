@@ -301,8 +301,8 @@ p {
 }
 @media (max-width: 576px) {
   .tamañoPrueba {
-    width: 65%;
-    height: 60%;
+    width: 60%;
+    height: 50%;
   }
 }
 
