@@ -35,6 +35,7 @@ body {
 
 img {
   padding: 10px;
+  grid-area: img;
 }
 
 ul {
@@ -50,118 +51,8 @@ main {
   font-family: none;
   grid-area: contenido;
 }
-main .tamañoGuisante {
-  position: relative;
-  width: 100px;
-  height: 80px;
-  right: 20px;
-  transition: all 1.5s;
-}
-@media (max-width: 576px) {
-  main .tamañoGuisante {
-    width: 80px;
-    height: 60px;
-  }
-}
-main .tamañoGuisante:hover {
-  transform: scale(1.1, 1.1);
-}
-main .imagenMazmorra {
-  position: relative;
-  height: 150px;
-  width: 180px;
-  right: 20px;
-  transition: all 1.5s;
-}
-@media (max-width: 576px) {
-  main .imagenMazmorra {
-    height: 130px;
-    width: 160px;
-  }
-}
-main .imagenMazmorra:hover {
-  transform: scale(1.1, 1.1);
-}
-main .tamañoSecreto {
-  position: relative;
-  width: 130px;
-  height: 110px;
-  right: 20px;
-  transition: all 1.5s;
-}
-@media (max-width: 576px) {
-  main .tamañoSecreto {
-    width: 110px;
-    height: 90px;
-  }
-}
-main .tamañoSecreto:hover {
-  transform: scale(1.1, 1.1);
-}
-main .tamañoManuel {
-  position: relative;
-  width: 90px;
-  height: 110px;
-  right: 20px;
-  transition: all 1.5s;
-}
-@media (max-width: 576px) {
-  main .tamañoManuel {
-    width: 60px;
-    height: 80px;
-  }
-}
-main .tamañoManuel:hover {
-  transform: scale(1.1, 1.1);
-}
-main .tamañoPrueba {
-  width: 40%;
-  height: 40%;
-  position: relative;
-  left: 80%;
-  bottom: 180px;
-}
-@media (max-width: 576px) {
-  main .tamañoPrueba {
-    width: 45%;
-    height: 35%;
-    left: 100%;
-    top: -130px;
-  }
-}
-main .posicionIcon {
-  position: relative;
-  top: 70px;
-  left: 1300px;
-}
-@media (max-width: 576px) {
-  main .posicionIcon {
-    left: 350px;
-    height: 30%;
-    width: 16%;
-  }
-}
-main .tamañoInGame {
-  width: 4%;
-  height: 24%;
-  position: relative;
-  bottom: 60px;
-  left: 1320px;
-}
-@media (max-width: 576px) {
-  main .tamañoInGame {
-    width: 10%;
-    height: 21%;
-    left: 370px;
-  }
-}
-main .longitudMaximaMovile {
-  max-width: 100%;
-}
-@media (max-width: 576px) {
-  main .longitudMaximaMovile {
-    max-width: 500px;
-  }
+main .navegacion {
+  background-color: #F26938;
 }
 
 header {
@@ -175,6 +66,11 @@ header {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   grid-area: header;
 }
+@media (max-width: 992px) {
+  header {
+    font-size: 400%;
+  }
+}
 @media (max-width: 576px) {
   header {
     font-size: 300%;
@@ -183,6 +79,12 @@ header {
 header .tamañoLogo {
   height: 200px;
   width: 600px;
+}
+@media (max-width: 992px) {
+  header .tamañoLogo {
+    height: 175px;
+    width: 520px;
+  }
 }
 @media (max-width: 576px) {
   header .tamañoLogo {
@@ -195,16 +97,32 @@ footer {
   text-align: right;
   background-color: slategray;
   display: grid;
+  justify-content: end;
   grid-area: footer;
 }
 footer .tamañoFlecha {
-  position: relative;
-  top: 22px;
   height: 70px;
   width: 70px;
 }
+@media (max-width: 992px) {
+  footer .tamañoFlecha {
+    height: 60px;
+    width: 60px;
+  }
+}
+@media (max-width: 576px) {
+  footer .tamañoFlecha {
+    height: 50px;
+    width: 50px;
+  }
+}
 footer .textoMediano {
   font-size: x-large;
+}
+@media (max-width: 992px) {
+  footer .textoMediano {
+    font-size: 19.5px;
+  }
 }
 @media (max-width: 576px) {
   footer .textoMediano {
@@ -214,6 +132,12 @@ footer .textoMediano {
 footer .tamañoTextarea {
   width: 654px;
   height: 190px;
+}
+@media (max-width: 992px) {
+  footer .tamañoTextarea {
+    width: 530.5px;
+    height: 155px;
+  }
 }
 @media (max-width: 576px) {
   footer .tamañoTextarea {
@@ -225,6 +149,11 @@ footer .tamañoTextarea {
 a {
   text-decoration: none;
   color: #191340;
+}
+@media (max-width: 992px) {
+  a {
+    font-size: 80%;
+  }
 }
 @media (max-width: 576px) {
   a {
@@ -238,6 +167,12 @@ p {
   font-size: 20px;
   list-style-type: none;
   color: #191340;
+  grid-area: texto;
+}
+@media (max-width: 992px) {
+  p {
+    font-size: 17.5px;
+  }
 }
 @media (max-width: 576px) {
   p {
@@ -245,6 +180,7 @@ p {
   }
 }
 
+/* grilla general */
 .grillaGeneral {
   display: grid;
   gap: 10px;
@@ -257,69 +193,356 @@ p {
   }
 }
 
-.moverTienda {
+.tamañoGuisante {
   position: relative;
-  left: 1000px;
-  bottom: 185px;
+  width: 100px;
+  height: 80px;
+  right: 20px;
+  transition: all 1.5s;
+}
+@media (max-width: 992px) {
+  .tamañoGuisante {
+    width: 90px;
+    height: 70px;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoGuisante {
+    width: 80px;
+    height: 60px;
+  }
 }
 
-.moverJefe {
+.tamañoGuisante:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.imagenMazmorra {
   position: relative;
-  bottom: 400px;
+  height: 150px;
+  width: 180px;
+  right: 20px;
+  transition: all 1.5s;
+}
+@media (max-width: 992px) {
+  .imagenMazmorra {
+    height: 120px;
+    width: 170px;
+  }
+}
+@media (max-width: 576px) {
+  .imagenMazmorra {
+    height: 130px;
+    width: 160px;
+  }
+}
+
+.imagenMazmorra:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.tamañoSecreto {
+  position: relative;
+  width: 130px;
+  height: 110px;
+  right: 20px;
+  transition: all 1.5s;
+}
+@media (max-width: 992px) {
+  .tamañoSecreto {
+    width: 120px;
+    height: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoSecreto {
+    width: 110px;
+    height: 90px;
+  }
+}
+
+.tamañoSecreto:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.tamañoManuel {
+  position: relative;
+  width: 90px;
+  height: 110px;
+  right: 20px;
+  transition: all 1.5s;
+}
+@media (max-width: 992px) {
+  .tamañoManuel {
+    width: 75px;
+    height: 95px;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoManuel {
+    width: 60px;
+    height: 80px;
+  }
+}
+
+.tamañoManuel:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.tamañoPrueba {
+  width: 30%;
+  height: 90%;
+}
+@media (max-width: 992px) {
+  .tamañoPrueba {
+    width: 35%;
+    height: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoPrueba {
+    width: 65%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 992px) {
+  .posicionIcon {
+    width: 65%;
+    height: 90%;
+  }
+}
+@media (max-width: 576px) {
+  .posicionIcon {
+    width: 60%;
+    height: 85%;
+  }
+}
+
+@media (max-width: 992px) {
+  .tamañoInGame {
+    width: 50%;
+    height: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoInGame {
+    width: 45%;
+    height: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  .tamañoCofres {
+    width: 100%;
+    height: 90%;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoCofres {
+    width: 70%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 992px) {
+  .tamañoCofresGrandes {
+    width: 75%;
+    height: 135%;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoCofresGrandes {
+    width: 55%;
+    height: 85%;
+  }
+}
+
+@media (max-width: 992px) {
+  .tamañoLetras {
+    width: 60%;
+    height: 65%;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoLetras {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+.tamañoTienda {
+  width: 60%;
+  height: 70%;
+}
+@media (max-width: 992px) {
+  .tamañoTienda {
+    width: 55%;
+    height: 55%;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoTienda {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+.tamañoJefe {
+  width: 50%;
+  height: 70%;
+}
+@media (max-width: 992px) {
+  .tamañoJefe {
+    width: 55%;
+    height: 55%;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoJefe {
+    width: 50%;
+    height: 50%;
+  }
 }
 
 .tamañoLlave {
-  height: 130px;
-  width: 70px;
-  position: relative;
-  top: 50px;
+  height: 140px;
+  width: 5%;
+}
+@media (max-width: 992px) {
+  .tamañoLlave {
+    width: 10%;
+    height: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoLlave {
+    width: 20%;
+    height: 60%;
+  }
 }
 
 .tamañoFogata {
-  height: 30%;
+  height: 90%;
   width: 30%;
-  position: relative;
-  top: 150px;
-  left: 30px;
+}
+@media (max-width: 992px) {
+  .tamañoFogata {
+    width: 45%;
+    height: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoFogata {
+    width: 80%;
+    height: 70%;
+  }
 }
 
-.moverBala {
-  position: relative;
-  left: 30px;
+.tamañoTele {
+  width: 10%;
+  height: 90%;
+}
+@media (max-width: 992px) {
+  .tamañoTele {
+    width: 15%;
+    height: 90%;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoTele {
+    width: 35%;
+    height: 60%;
+  }
+}
+
+.tamañoBala {
+  width: 6%;
+  height: 90%;
+}
+@media (max-width: 992px) {
+  .tamañoBala {
+    width: 10%;
+    height: 85%;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoBala {
+    width: 30%;
+    height: 55%;
+  }
 }
 
 .tamañoRoll {
-  height: 30%;
+  height: 115%;
   width: 30%;
-  position: relative;
+}
+@media (max-width: 992px) {
+  .tamañoRoll {
+    width: 40%;
+    height: 90%;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoRoll {
+    width: 90%;
+    height: 75%;
+  }
 }
 
-.moverDado {
-  position: relative;
-  left: 1200px;
-  bottom: 300px;
+.tamañoDado {
+  width: 25%;
+  height: 60%;
+}
+@media (max-width: 992px) {
+  .tamañoDado {
+    width: 25%;
+    height: 65%;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoDado {
+    width: 40%;
+    height: 43%;
+  }
 }
 
-.moverCartucho {
-  position: relative;
-  left: 1250px;
-  bottom: 250px;
+.tamañoCartucho {
+  width: 15%;
+  height: 75%;
+}
+@media (max-width: 992px) {
+  .tamañoCartucho {
+    width: 17%;
+    height: 75%;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoCartucho {
+    width: 25%;
+    height: 50%;
+  }
 }
 
-.moverSoldado {
-  position: relative;
-  left: 1300px;
-  bottom: 300px;
+.tamañoSoldado {
+  width: 30%;
+  height: 95%;
 }
-
-.moverJefe {
-  position: relative;
-  left: 1000px;
-  top: 10px;
+@media (max-width: 992px) {
+  .tamañoSoldado {
+    width: 35%;
+    height: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .tamañoSoldado {
+    width: 35%;
+    height: 45%;
+  }
 }
 
 .paddingTop {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 .paddingBottom {
@@ -327,50 +550,16 @@ p {
 }
 
 .longitudMaxima {
-  width: 60%;
-}
-
-.longitudMaximaMenor {
   width: 65%;
 }
-
-.moverArriba {
-  position: relative;
-  bottom: -25px;
-}
-
-.justificarIzquierdaMayor {
-  justify-content: left;
-  position: relative;
-  max-width: 92%;
-}
-
-.moverAbajoImagen {
-  position: relative;
-  top: 230px;
-}
-
-.moverArribaImagen {
-  position: relative;
-  bottom: -50px;
-}
-
-.soloJustificarIzquierda {
-  justify-content: left;
-  max-width: 50%;
-  position: relative;
-  top: 165px;
+@media (max-width: 576px) {
+  .longitudMaxima {
+    width: 100%;
+  }
 }
 
 .alturaMaxima {
   max-height: 400px;
-}
-
-.justificarYMover {
-  justify-content: left;
-  position: relative;
-  bottom: 370px;
-  max-width: 50%;
 }
 
 .moverMasArriba {
@@ -378,17 +567,22 @@ p {
   bottom: 30px;
 }
 
-.moverTextoRoll {
-  max-width: 65%;
-  position: relative;
-  bottom: 250px;
-  left: 600px;
-}
-
 .flexContainer {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.flexImagenes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .flexImagenes {
+    flex-direction: column;
+  }
 }
 
 .centrar {
@@ -397,18 +591,99 @@ p {
   align-items: center;
 }
 
+.gridPrimerIntento {
+  display: grid;
+}
+
+.icono {
+  grid-area: icono;
+}
+
+.inGame {
+  grid-area: inGame;
+}
+
+.grillaPrimerIntento {
+  display: grid;
+  grid-template-areas: "texto icono" "texto inGame";
+  align-items: center;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 85% auto;
+  padding-top: 30px;
+  justify-items: center;
+}
+@media (max-width: 576px) {
+  .grillaPrimerIntento {
+    grid-template-columns: 75% auto;
+  }
+}
+
+.cofreMarron {
+  grid-area: cofreMarron;
+}
+
+.letraD {
+  grid-area: letraD;
+}
+
+.cofreAzul {
+  grid-area: cofreAzul;
+}
+
+.letraC {
+  grid-area: letraC;
+}
+
+.cofreVerde {
+  grid-area: cofreVerde;
+}
+
+.letraB {
+  grid-area: letraB;
+}
+
+.cofreRojo {
+  grid-area: cofreRojo;
+}
+
+.letraA {
+  grid-area: letraA;
+}
+
+.cofreNegro {
+  grid-area: cofreNegro;
+}
+
+.letraS {
+  grid-area: letraS;
+}
+
+.grillaCofres {
+  display: grid;
+  grid-template-areas: "cofreMarron letraD cofreAzul letraC cofreVerde letraB" "cofreRojo cofreRojo letraA cofreNegro cofreNegro letraS";
+  grid-template-rows: 45% 45%;
+  grid-template-columns: repeat(6, 75px);
+  justify-items: center;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .grillaCofres {
+    grid-template-rows: 40% 40%;
+    grid-template-columns: repeat(6, 70px);
+  }
+}
+@media (max-width: 576px) {
+  .grillaCofres {
+    grid-template-rows: 65% 65%;
+    grid-template-columns: repeat(6, 80px);
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 
-/* grid areas */
-.navegacion {
-  background-color: #F26938;
-}
-
 .alinearCentro {
   align-content: center;
-}
-
-/* grilla general*//*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

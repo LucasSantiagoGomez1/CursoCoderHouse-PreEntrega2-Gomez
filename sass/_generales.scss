@@ -6,6 +6,7 @@ body{
 
 img{
     padding: 10px;
+    grid-area: img;
 }
 
 ul{
@@ -20,116 +21,11 @@ main{
     line-height: 1.7;
     font-family: none;
     grid-area: contenido;
-
-    .tamañoGuisante{
-        position: relative;
-        width: 100px;
-        height: 80px;
-        right: 20px;
-        transition: all 1.5s;
-        @media(max-width:576px){
-            width: 80px;
-            height: 60px;
-        }
-    }
-
-    .tamañoGuisante:hover{
-        transform: scale(1.1, 1.1);
-    }
-
-    .imagenMazmorra{
-        position: relative;
-        height: 150px;
-        width: 180px;
-        right: 20px;
-        transition: all 1.5s;
-        @media(max-width:576px){
-            height: 130px;
-            width: 160px;
-        }
-    }
-
-    .imagenMazmorra:hover{
-        transform: scale(1.1, 1.1);
-    }
-
-    .tamañoSecreto{
-        position: relative;
-        width: 130px;
-        height: 110px;
-        right: 20px;
-        transition: all 1.5s;
-        @media(max-width:576px){
-            width: 110px;
-            height: 90px;
-        }
-    }
-
-    .tamañoSecreto:hover{
-        transform: scale(1.1, 1.1);
-    }
-
-    .tamañoManuel{
-        position: relative;
-        width: 90px;
-        height: 110px;
-        right: 20px;
-        transition: all 1.5s;
-        @media(max-width:576px){
-            width: 60px;
-            height: 80px;
-        }
-    }
-
-    .tamañoManuel:hover{
-        transform: scale(1.1, 1.1);
-    }
-
-    .tamañoPrueba{
-
-        width: 40%;
-        height: 40%;
-        position: relative;
-        left: 80%;
-        bottom: 180px;
-        @media(max-width:576px){
-            width: 45%;
-            height: 35%;
-            left: 100%;
-            top: -130px;
-        }
-    }
-
-    .posicionIcon{
-        position: relative;
-        top: 70px;
-        left: 1300px; 
-        @media(max-width:576px){
-            left: 350px;
-            height: 30%;
-            width: 16%;
-        }
-    }
-
-    .tamañoInGame{
-        width: 4%;
-        height: 24%;
-        position: relative;
-        bottom: 60px;
-        left: 1320px;
-        @media(max-width:576px){
-            width: 10%;
-            height: 21%;
-            left: 370px;
-        }
-    }
     
-    .longitudMaximaMovile{
-        max-width: 100%;
-        @media(max-width:576px){
-            max-width: 500px;
-        }
+    .navegacion{
+        background-color: #F26938;
     }
+
 }
 
 header{
@@ -142,7 +38,9 @@ header{
     color: #F26938;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     grid-area: header;
-
+    @media(max-width:992px){
+        font-size: 400%;
+    }
     @media(max-width:576px){
         font-size: 300%;
     }
@@ -150,7 +48,10 @@ header{
     .tamañoLogo{
         height: 200px;
         width: 600px;
-
+        @media(max-width:992px){
+            height: 175px;
+            width: 520px;
+        }
         @media(max-width:576px){
             height: 150px;
             width: 440px;
@@ -162,17 +63,27 @@ footer{
     text-align: right;
     background-color: slategray;
     display: grid;
+    justify-content: end;
     grid-area: footer;
 
     .tamañoFlecha{
-        position: relative;
-        top: 22px;
         height: 70px;
         width: 70px;
+        @media(max-width:992px){
+            height: 60px;
+            width: 60px;
+        }
+        @media(max-width:576px){
+            height: 50px;
+            width: 50px;
+        }
     }
 
     .textoMediano{
         font-size: x-large;
+        @media(max-width:992px){
+            font-size: 19.5px;
+        }
         @media(max-width:576px){
             font-size: 15px;
         }
@@ -181,6 +92,10 @@ footer{
     .tamañoTextarea{
         width: 654px;
         height: 190px;
+        @media(max-width:992px){
+            width: 530.5px;
+            height: 155px;
+        }
         @media(max-width:576px){
             width: 407px;
             height: 120px;
@@ -191,6 +106,9 @@ footer{
 a{
     text-decoration: none;
     color: #191340;
+    @media(max-width:992px){
+        font-size: 80%;
+    }
     @media(max-width:576px){
         font-size: 65%;
     }
@@ -202,6 +120,10 @@ p{
     font-size: 20px;
     list-style-type: none ;
     color: #191340;
+    grid-area: texto;
+    @media(max-width:992px){
+        font-size: 17.5px;
+    }
     @media(max-width:576px){
         font-size: 15px;
     }

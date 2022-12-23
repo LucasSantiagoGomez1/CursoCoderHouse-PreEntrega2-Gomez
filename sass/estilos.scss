@@ -2,15 +2,14 @@
 @import "generales";
 @import "imagenesIndv";
 @import "boxModeling";
+@import "gridAreas";
 
 *{
     padding: 0;
     margin: 0;
 }
 
-.navegacion{
-    background-color: #F26938;
-}
+
 
 .alinearCentro{
     align-content: center;

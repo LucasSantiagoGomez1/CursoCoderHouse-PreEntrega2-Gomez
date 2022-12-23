@@ -1,61 +1,284 @@
-
-.moverTienda{
+.tamañoGuisante{
     position: relative;
-    left: 1000px;
-    bottom: 185px;
+    width: 100px;
+    height: 80px;
+    right: 20px;
+    transition: all 1.5s;
+    @media(max-width:992px){
+        width: 90px;
+        height: 70px;
+    }
+    @media(max-width:576px){
+        width: 80px;
+        height: 60px;
+    }
 }
 
-.moverJefe{
+.tamañoGuisante:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.imagenMazmorra{
     position: relative;
-    bottom: 400px;
+    height: 150px;
+    width: 180px;
+    right: 20px;
+    transition: all 1.5s;
+    @media(max-width:992px){
+        height: 120px;
+        width: 170px;
+    }
+    @media(max-width:576px){
+        height: 130px;
+        width: 160px;
+    }
+}
+
+.imagenMazmorra:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.tamañoSecreto{
+    position: relative;
+    width: 130px;
+    height: 110px;
+    right: 20px;
+    transition: all 1.5s;
+    @media(max-width:992px){
+        width: 120px;
+        height: 80px;
+    }
+    @media(max-width:576px){
+        width: 110px;
+        height: 90px;
+    }
+}
+
+.tamañoSecreto:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.tamañoManuel{
+    position: relative;
+    width: 90px;
+    height: 110px;
+    right: 20px;
+    transition: all 1.5s;
+    @media(max-width:992px){
+        width: 75px;
+        height: 95px;
+    }
+    @media(max-width:576px){
+        width: 60px;
+        height: 80px;
+    }
+}
+
+.tamañoManuel:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.tamañoPrueba{
+    width: 30%;
+    height: 90%;
+    @media(max-width:992px){
+        width: 35%;
+        height: 70%;
+    }
+    @media(max-width:576px){
+        width: 65%;
+        height: 60%;
+    }
+}
+
+.posicionIcon{
+    @media(max-width:992px){
+        width: 65%;
+        height: 90%;
+    }
+    @media(max-width:576px){
+        width: 60%;
+        height: 85%;
+    }
+}
+
+.tamañoInGame{
+    @media(max-width:992px){
+        width: 50%;
+        height: 80%;
+    }
+    @media(max-width:576px){
+        width: 45%;
+        height: 70%;
+    }
+}
+
+.tamañoCofres{
+    @media(max-width:992px){
+        width: 100%;
+        height: 90%;
+    }
+    @media(max-width:576px){
+        width: 70%;
+        height: 60%;
+    }
+}
+
+.tamañoCofresGrandes{
+    @media(max-width:992px){
+        width: 75%;
+        height: 135%;
+    }
+    @media(max-width:576px){
+        width: 55%;
+        height: 85%;
+    }
+}
+
+.tamañoLetras{
+    @media(max-width:992px){
+        width: 60%;
+        height: 65%;
+    }
+    @media(max-width:576px){
+        width: 50%;
+        height: 50%;
+    }
+}
+
+.tamañoTienda{
+    width: 60%;
+    height: 70%;
+    @media(max-width:992px){
+        width: 55%;
+        height: 55%;
+    }
+    @media(max-width:576px){
+        width: 50%;
+        height: 50%;
+    }
+}
+
+.tamañoJefe{
+    width: 50%;
+    height: 70%;
+    @media(max-width:992px){
+        width: 55%;
+        height: 55%;
+    }
+    @media(max-width:576px){
+        width: 50%;
+        height: 50%;
+    }
 }
 
 .tamañoLlave{
-    height: 130px;
-    width: 70px;
-    position: relative;
-    top: 50px;
+    height: 140px;
+    width: 5%;
+
+    @media(max-width:992px){
+        width: 10%;
+        height: 80%;
+    }
+    @media(max-width:576px){
+        width: 20%;
+        height: 60%;
+    }
 }
 
 .tamañoFogata{
-    height: 30%;
+    height: 90%;
     width: 30%;
-    position: relative;
-    top: 150px;
-    left: 30px;
+
+    @media(max-width:992px){
+        width: 45%;
+        height: 70%;
+    }
+    @media(max-width:576px){
+        width: 80%;
+        height: 70%;
+    }
 }
 
-.moverBala{
-    position: relative;
-    left: 30px;
+.tamañoTele{
+    width: 10%;
+    height: 90%;
+
+    @media(max-width:992px){
+        width: 15%;
+        height: 90%;
+    }
+    @media(max-width:576px){
+        width: 35%;
+        height: 60%;
+    }
+}
+
+.tamañoBala{
+    width: 6%;
+    height: 90%;
+
+    @media(max-width:992px){
+        width: 10%;
+        height: 85%;
+    }
+    @media(max-width:576px){
+        width: 30%;
+        height: 55%;
+    }
 }
 
 .tamañoRoll{
-    height: 30%;
+    height: 115%;
     width: 30%;
-    position:relative;
+    @media(max-width:992px){
+        width: 40%;
+        height: 90%;
+    }
+    @media(max-width:576px){
+        width: 90%;
+        height: 75%;
+    }
 }
 
-.moverDado{
-    position: relative;
-    left: 1200px;
-    bottom: 300px;
+.tamañoDado{
+    width: 25%;
+    height: 60%;
+
+    @media(max-width:992px){
+        width: 25%;
+        height: 65%;
+    }
+    @media(max-width:576px){
+        width: 40%;
+        height: 43%;
+    }
 }
 
-.moverCartucho{
-    position: relative;
-    left: 1250px;
-    bottom: 250px;
+.tamañoCartucho{
+    width: 15%;
+    height: 75%;
+
+    @media(max-width:992px){
+        width: 17%;
+        height: 75%;
+    }
+    @media(max-width:576px){
+        width: 25%;
+        height: 50%;
+    }
 }
 
-.moverSoldado{
-    position: relative;
-    left: 1300px;
-    bottom: 300px;
-}
+.tamañoSoldado{
+    width: 30%;
+    height: 95%;
 
-.moverJefe{
-    position: relative;
-    left: 1000px;
-    top: 10px;
+    @media(max-width:992px){
+        width: 35%;
+        height: 100%;
+    }
+    @media(max-width:576px){
+        width: 35%;
+        height: 45%;
+    }
 }

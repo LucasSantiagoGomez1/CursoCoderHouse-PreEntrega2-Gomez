@@ -1,0 +1,79 @@
+.icono{
+    grid-area: icono;
+}
+.inGame{
+    grid-area: inGame;
+}
+.grillaPrimerIntento{
+    display: grid;
+    grid-template-areas: 
+    "texto icono"
+    "texto inGame";
+    align-items: center;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 85% auto;
+    padding-top: 30px;
+    justify-items: center;
+    @media(max-width:576px){
+        grid-template-columns: 75% auto;
+    }
+}
+
+.cofreMarron{
+    grid-area: cofreMarron;
+}
+
+.letraD{
+    grid-area: letraD;
+}
+
+.cofreAzul{
+    grid-area: cofreAzul;
+}
+
+.letraC{
+    grid-area: letraC;
+}
+
+.cofreVerde{
+    grid-area: cofreVerde;
+}
+
+.letraB{
+    grid-area: letraB;
+}
+
+.cofreRojo{
+    grid-area: cofreRojo;
+}
+
+.letraA{
+    grid-area: letraA;
+}
+
+.cofreNegro{
+    grid-area: cofreNegro;
+}
+
+.letraS{
+    grid-area: letraS;
+}
+
+.grillaCofres{
+    display: grid;
+    grid-template-areas: 
+    "cofreMarron letraD cofreAzul letraC cofreVerde letraB"
+    "cofreRojo cofreRojo letraA cofreNegro cofreNegro letraS";
+    grid-template-rows: 45% 45%;
+    grid-template-columns: repeat(6, 75px);
+    justify-items: center;
+    align-items: center;
+    @media(max-width:992px){
+        grid-template-rows: 40% 40%;
+        grid-template-columns: repeat(6, 70px);
+    }
+    @media(max-width:576px){
+        grid-template-rows: 65% 65%;
+        grid-template-columns: repeat(6, 80px);
+    }
+}
